@@ -1,0 +1,52 @@
+html{
+	font-family: sans-serif;
+}
+
+body{
+	background: #7fc3b2;
+}
+
+header,
+section,
+nav,
+aside,
+article,
+footer{
+	background: #b2dbd1;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 4px;
+	padding: 1px 0px 1px 0px;
+	margin-top: 5px;
+}
+
+nav,
+aside,
+section{
+	width: 33%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 5px 0px 5px 0px;
+}
+
+nav{
+	float: left;
+}
+
+aside{
+	float: right;
+}
+
+p{
+	text-align: center;
+}
+
+.sub-section:hover{
+	background: #e5f3ef;
+}
+
+.sub-section{
+	background: #cce7e0;
+	margin-right: 5px;
+	margin-left: 5px;
+}
