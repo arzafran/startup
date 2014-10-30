@@ -1,5 +1,6 @@
 html{
 	font-family: sans-serif;
+	font-size: 14px;
 }
 
 body{
@@ -49,4 +50,21 @@ p{
 	background: #cce7e0;
 	margin-right: 5px;
 	margin-left: 5px;
+}
+
+.header{
+	font-size: 46px;
+}
+
+.footer,
+.sidebar{
+	font-size: 10px;
+}
+
+.content{
+	font-size: 14px;
+}
+
+.navigation{
+	font-size: 12px;
 }
