@@ -20,7 +20,7 @@ $(document).ready(function(){
             $.each(data.statuses,function(i,val){
             	var tweetBox='<div class="tweets-unit">';
             		tweetBox += '<img src='+val.user.profile_image_url+' alt=""/>';
-            		tweetBox += '<p class="tweets-text">' + val.text + '</p>' + '<p class="tweets-user">' + val.user.name + '</p>';
+            		tweetBox += '<p class="tweets-text">' + val.text + '</p>' + '<p class="tweets-user"><em>' + val.user.name + '</em></p>';
             		tweetBox += '<p class="tweets-date">' + val.created_at + '</p>';
             		tweetBox += '</div>';
             	$('#tweets-box').append(tweetBox);

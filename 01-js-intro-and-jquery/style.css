@@ -19,6 +19,7 @@ section.tweets{
 	padding: 0px 5px;
 	border-radius: 2px;
 	background-color: rgba(0,0,0,0.3);
+	float: left;
 }
 
 div .tweets-unit{
@@ -46,6 +47,16 @@ p.tweets-profile-image{
 	text-align: center;
 }
 
+.alias{
+	width: 160px;
+	text-align: center;
+}
+
+.user-input{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
 .ready-button{
 	box-shadow: inset 0px 1px 0px 0px #caefab;
 	background-color: #77d42a;
@@ -54,6 +65,7 @@ p.tweets-profile-image{
 	text-shadow: 0px 1px 0px #aade7c;
 	text-decoration: none;
 	font-weight: bold;
+	margin-top: 5px;
 	padding: 6px 24px;
 	cursor: pointer;
 }
