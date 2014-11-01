@@ -18,11 +18,11 @@ $(document).ready(function(){
         }).success(function(data){
             console.log(data);
             $.each(data.statuses,function(i,val){
-            	var tweetBox='<div class="tweets-unit">';
-            		tweetBox += '<img src='+val.user.profile_image_url+' alt=""/>';
-            		tweetBox += '<p class="tweets-text">' + val.text + '</p>' + '<p class="tweets-user"><em>' + val.user.name + '</em></p>';
-            		tweetBox += '<p class="tweets-date">' + val.created_at + '</p>';
-            		tweetBox += '</div>';
+            	var tweetBox='<div class="tweets-unit">'+
+            		'<img src='+val.user.profile_image_url+' alt=""/>'+
+            		'<p class="tweets-text">' + val.text + '</p>' + '<p class="tweets-user"><em>' + val.user.name + '</em></p>'+
+            		'<p class="tweets-date">' + val.created_at + '</p>'+
+            		'</div>';
             	$('#tweets-box').append(tweetBox);
         	});
     	}); 
