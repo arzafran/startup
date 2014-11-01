@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01 Js-Jquery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header></header>
+    <div class="row clearfix">
+      <div class="column full">
+        <section class="greet hidden">
+          <h2 class="hidden">Titulo</h2>
+		  <p id="greeter-text" class="">Hello World!</p>
+        </section>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="column half">
+        <input id="user-input" type="text" class="alias">
+        <button class="ready-button" value="submit">Push that button!</button>
+      </div>
+      <div class="column half">
+        <section class="tweets">
+          <h2 class="hidden">Aca van los Tweets</h2>
+          <div id="tweets-box" class="row clearfix"></div>
+        </section>	
+      </div>
+    </div>
+  </div>
+</body>
+</html>

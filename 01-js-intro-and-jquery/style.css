@@ -1,0 +1,80 @@
+html{
+	font-family: sans-serif;
+}
+
+body{
+	background-color: #caefab;
+}
+
+p{
+	text-shadow: 0px 1px 0px #aade7c;
+}
+
+img{
+	border-radius: 3px;
+	float:left;
+}
+
+section.tweets{
+	padding: 0px 5px;
+	border-radius: 2px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+div .tweets-unit{
+	border-radius: 2px;
+	background-color: #91B870; 
+}
+
+div .tweets-unit:hover{
+	background-color: #caefab;
+}
+
+p.tweets-text,
+p.tweets-user,
+p.tweets-date,
+p.tweets-profile-image{
+	font-size: 10px;
+	text-align: right;
+	padding: 2px 2px;
+	margin: 5px 5px 5px 5px;
+}
+
+#greeter-text{
+	font-weight: normal;
+	font-size: 24px;
+	text-align: center;
+}
+
+.ready-button{
+	box-shadow: inset 0px 1px 0px 0px #caefab;
+	background-color: #77d42a;
+	border: 1px solid #268a16;
+	color: #306108;
+	text-shadow: 0px 1px 0px #aade7c;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 6px 24px;
+	cursor: pointer;
+}
+
+.ready-button:hover {
+	background-color: #5cb811;
+}
+
+.ready-button:active {
+	position: relative;
+	top: 1px;
+}
+
+.hidden{
+	display: none;
+}
+
+.error{
+	color: #f00;
+}
+
+.higlight{
+	color: #15C400;
+}
