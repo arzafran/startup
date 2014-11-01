@@ -16,15 +16,19 @@ img{
 }
 
 section.tweets{
-	padding: 0px 5px;
+	padding: 0px 6px;
 	border-radius: 2px;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.2);
 	float: left;
 }
 
 div .tweets-unit{
+	border-style: solid;
+	border-color: #306108;
+	border-width: 1px;
 	border-radius: 2px;
-	background-color: #91B870; 
+	background-color: #91B870;
+	margin: 5px 0px;
 }
 
 div .tweets-unit:hover{
@@ -35,10 +39,10 @@ p.tweets-text,
 p.tweets-user,
 p.tweets-date,
 p.tweets-profile-image{
-	font-size: 10px;
+	font-size: 12px;
 	text-align: right;
 	padding: 2px 2px;
-	margin: 5px 5px 5px 5px;
+	margin: 3px 3px 3px 3px;
 }
 
 #greeter-text{
