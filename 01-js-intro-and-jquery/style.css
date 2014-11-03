@@ -78,6 +78,7 @@ p.tweets-profile-image{
 	margin-top: 5px;
 	padding: 6px 24px;
 	cursor: pointer;
+	width: 160px;
 }
 
 .ready-button:hover {

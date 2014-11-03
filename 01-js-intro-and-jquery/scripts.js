@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$.get('http://bootcamp.aws.af.cm/welcome/' + $('#user-input').val(), function(data){
 			$('#greeter-text').html(function(){
 				var arr = data.response.split(" ");
-				return arr.shift() + '<span class="higlight">' + arr.join(" ") + '</span>';
+				return arr.shift() + ' <span class="higlight">' + arr.join(" ") + '</span>';
 			})
 		}, "json" )
 		.fail(function() { $("#greeter-text").addClass("error"); });
