@@ -24,8 +24,8 @@ function Movie() {
   this.play = function(){
     $.publish('play', this.get('title'));
   }
-
+  
   this.stop = function(){
     $.publish('stop', this.get('title'));
   }
-}
+};

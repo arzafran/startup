@@ -7,12 +7,9 @@ http://addyosmani.com/resources/essentialjsdesignpatterns
 /book/#observerpatternjavascript
 */
 
-var Movie = (function ($, Social){
+var Movie = (function ($){
 
   var publicAPI = function () {
-    
-    Social.call(this);
-
     this.set = function(attr,val) { 
       Object.defineProperty(this, attr, {value: val}); 
     }
@@ -25,10 +22,19 @@ var Movie = (function ($, Social){
     this.stop = function(){
       $.publish('stop', this.get('title'));
     }
+    this.displayActors = function(){
+      if(this.hasOwnProperty('actors')){
+        $.each(this.actors, function(){
+         console.log(this.getname());
+        });
+      }else{
+        console.log("404 -- Actors not Found");
+      }
+    }
   }
-  
-  return publicAPI;   
-}(jQuery, Social));
+
+  return publicAPI;
+}(jQuery));
 
 /*
 ALTERNATE MOVIE MODULE FOR THE ALTERNATE MOVIE OBSERVER XD

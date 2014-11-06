@@ -1,10 +1,8 @@
 // Social Mixin
 
-var Social =(function (){
-  var publicAPI = function(){
+var Social = function (){
 	this.share = function (somebody) {
         console.log("Sharing "+ this.get('title') + " with " + somebody);
     }
-  };
-  return publicAPI;
-}());
+    return this;
+};
