@@ -29,7 +29,7 @@ var $greeter = $('#greeter-text');
   });
 
   $('#share').click(function(){
-  	bernardo.share($('#user-input').val());
+  	bernardo.share($('#user-input').val().trim()||'the World!');
   });
   
   $('#download').click(function(){
