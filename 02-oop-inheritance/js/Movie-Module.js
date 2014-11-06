@@ -24,9 +24,7 @@ var Movie = (function ($){
     }
     this.displayActors = function(){
       if(this.hasOwnProperty('actors')){
-        $.each(this.actors, function(){
-         console.log(this.getname());
-        });
+        $.publish('displayActors', this);
       }else{
         console.log("404 -- Actors not Found");
       }

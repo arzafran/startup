@@ -1,0 +1,42 @@
+html{
+	font-family: sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+body{
+	background-color: #1C5E5E;
+}
+
+p{
+	text-shadow: 1px 1px 0px #7FA3A3;
+	color: #B3E2E2;
+}
+
+.actorName{
+	font-size: 13px;
+}
+
+.button{
+	box-shadow: inset 0px 1px 0px 0px #9FBBBB;
+	background-color: #528181;
+	border: 1px solid #336E6E;
+	border-radius: 3px;
+	color: #084A4A;
+	text-shadow: 0px 1px 0px #7FA3A3;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 5px;
+	padding: 6px 24px;
+	cursor: pointer;
+	width: 160px;
+}
+
+.button:hover {
+	background-color: #7CAFAF;
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}

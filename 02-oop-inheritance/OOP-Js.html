@@ -3,16 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>02 - OOP JS</title>
-	<script src="plugins/jquery-2.1.1.min.js"></script>
-	<script src="plugins/jquery-pubsub-plugin.js"></script>
-	<script src="plugins/Actors.js"></script>
-	<script src="plugins/Social-Mixin.js"></script>
-	<script src="plugins/Movie-Module.js"></script>
-	<script src="plugins/Downloadable-Movie.js"></script>
-	<script src="plugins/Movie-Observer.js"></script>
-	<script src="script.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery-pubsub-plugin.js"></script>
+	<script src="js/Actors.js"></script>
+	<script src="js/Social-Mixin.js"></script>
+	<script src="js/Movie-Module.js"></script>
+	<script src="js/Downloadable-Movie.js"></script>
+	<script src="js/Movie-Observer.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<body>
+  <div class="container">
+    <header></header>
+    <div class="row clearfix">
+      <div class="column full">
+		  <p class="greet" id="greeter-text">El Videoclub 2 Peliculas</p>
+      </div>
+    </div>
+   <div class="row clearfix">
+      <div id="ironMan" class="column third">
+        <div class="row clearfix">
+          <button class="button" id="play" value="submit">Play Iron Man 3</button>
+        </div>
+        <div class="row clearfix">
+          <button class="button" id="stop" value="submit">Stop Iron Man 3</button>
+        </div>
+        <div class="row clearfix">
+          <button class="button" id="displayActors" value="submit">Who plays on Iron Man 3</button>
+        </div>
+        <div class="row clearfix">
+          <button class="button" id="displayActors" value="submit">Who plays on Iron Man 3</button>
+        </div>
+      </div>
+      <div id="bernardo" class="column third">
+        <div class="row clearfix">
+          <input id="user-input" type="text" class="alias">
+        </div>
+        <div class="row clearfix">
+          <button class="button" id="share" value="submit">Share Bernado y Bianca</button>
+        </div>
+      </div>
+      <div id="download" class="column third">
+        <div class="row clearfix">
+          <button class="button" id="download" value="submit">Downlaod Piratas del Caribe VII</button>
+        </div>
+      </div>
+     </div>
+    </div>
 </body>
 </html>
