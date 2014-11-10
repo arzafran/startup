@@ -1,0 +1,27 @@
+{
+  "values": [
+    {
+      "firstName": "Anakin",
+      "lastName": "Skywalker",
+      "img": "app/anakin-profile.jpg",
+      "hobby": "Altering deals with Lando Calrissian",
+      "actualJob": "Supreme Commander of The Galactic Empire",
+      "livingIn": "Death Star",
+      "education": "Homeschooled - Jedi Academy - Lord Sidious",
+      "jobs": [
+        {
+          "occupation": "Master Jedi",
+          "job": "Jedi Academy"
+        },
+        {
+          "occupation": "Padawan",
+          "job": "Jedi Academy"
+        },
+        {
+          "occupation": "Mechanic",
+          "job": "Watto's Shop"
+        }
+      ]
+    }
+  ]
+}
