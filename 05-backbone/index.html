@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title></title>
+</head>
+<body>
+<div id="page"></div>
+	<script id="billboard-template" type="text/template">
+	<button class="btn add">+</button>
+		{{#each this}}
+			<div class="row clearfix">
+				<div class="column full">
+					<img src="{{img}}" alt="img"></br>
+					<h2 id="title">{{title}} ({{releaseyear}})</h3>
+					<div class="movie-description">
+						<em>Director:</em><span id="director" > {{director}}<span></br>
+						<em>Duration:</em><span id="duration"> {{duration}} minutes<span></br>
+						<em>Synopsis:</em><p id="synopsis" > {{synopsis}}</p>
+					</div>
+				<div class="panel-btns">
+					<button id="{{@index}}" class="btn delete">Delete</button>
+					<button id="{{@index}}" class="btn edit">Edit</button>
+				</div>
+				</div>
+			</div><hr/>
+		{{/each}}
+	</script>
+	<script id="edit-template" type="text/template">
+		<div>
+			<form class="smart-green" id="data">
+				<label>Title</label> <input id='title' type="text" value="{{title}}"/> 
+				<label>Director</label> <input id='director' type="text" value="{{director}}"/> 
+				<label>Year</label> <input id='year' type="text" value="{{releaseyear}}"/> 
+				<label>Duration (in Minutes)</label> <input id='duration' type="text" value="{{duration}}"/>
+				<label>Synopsis</label> <textarea id='synopsis'  rows="2" cols="20">{{synopsis}}</textarea>
+			</form>
+				<button class="btn save">Save</button>
+				<button class="btn back">Get Back!</button>
+		</div>
+	</script>
+	<script data-main="app.js" src="js/vendor/require.js"></script>
+</body>
+</html>
+

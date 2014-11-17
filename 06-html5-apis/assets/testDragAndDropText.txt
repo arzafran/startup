@@ -1,0 +1,2 @@
+A revolution is coming. There’s a new addition to JavaScript that’s going to change everything you think you know about data-binding. It’s also going to change how many of your MVC libraries approach observing models for edits and updates. Are you ready for some sweet performance boosts to apps that care about property observation?
+

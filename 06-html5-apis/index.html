@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <div class="row clearfix">
+        <div class="column half">
+          <div class="row clearfix">
+            <h2>Canvas Random figures</h2>
+            <div class="column third clearfix">
+              <canvas width=auto height=auto id='figure1'>if you see this you shoud update your browser!</canvas>
+            </div>
+            <div class="column third">
+              <canvas width=auto height=auto id='figure2'>if you see this you shoud update your browser!</canvas>
+            </div>
+            <div class="column third">
+              <canvas width=auto height=auto id='figure3'>if you see this you shoud update your browser!</canvas>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <h2>Canvas Animation</h2>
+            <canvas width=auto height=auto id='canvasAnimation'>Get Chrome!</canvas>
+            <h4>&larr; &uarr; &rarr; &darr; to move the &#9724; around!</h4>
+          </div>
+        </div>
+        <div class="column half">
+          <h2>IndexedDB</h2>
+          <h4>Drag/Drop Write</h4>
+          <div class="row clearfix">
+          <button class="btn save" id='save'>Save</button>
+          <button class="btn delete" id='delete'>Delete</button>
+          </div>
+          </br>
+          <textarea id="dropDaBase"  rows="5" cols="20" ondrop="drop(event)" ondragover="allowDrop(event)"></textarea>
+          <div class="row clearfix">
+          <button class="btn" id='get'>Get data</button>
+          </div>
+          <div class="row clearfix" id="dataHolder"></div>
+        </div>
+      </div>    
+    </div>
+    <!--Loaded here cuz using require wouldn't allow drop.  weird, any suggestions are welcome!-->
+    <script type="text/javascript">
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+      function drop(ev) {
+        ev.preventDefault();
+        var file = ev.dataTransfer.files[0];
+        var reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = function(event) {
+          $("#dropDaBase").val(event.target.result);
+        };
+      }
+      </script> 
+    <script data-main="js/app.js" src="js/vendor/require.js"></script>
+  </body>
+</html>
