@@ -1,0 +1,38 @@
+body{
+	background-color: #F5F5F5;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+h4{
+	margin: 0px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.thumbnail{
+	margin-bottom: 0px;
+}
+.media{
+	margin: 0px;
+	padding: 10px;
+}
+.media-left{
+	padding:4px
+}
+.col-sm-6{
+	background-color: #FFF;
+	box-shadow: 1px 1px 3px 0 rgba(100, 100, 100, 0.7); 
+}
+.nav-pills{
+	border: none;
+}
+@media (max-width: 992px){ 
+	.media-body{
+		margin-top: 10px;
+	} 
+	.thumbnail{
+		border:none;
+	}
+	img{
+		border-radius: 3px;
+	}
+}
